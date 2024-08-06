@@ -70,10 +70,10 @@ class Discriminator(nn.Module):
         return self.main(input).view(-1)
 
 # Hyperparameters
-nz = 100  # Size of the latent vector (input to the generator)
-lr = 0.0002
+nz = 120  # Size of the latent vector (input to the generator)
+lr = 0.0001
 batch_size = 128
-num_epochs = 200
+num_epochs = 600
 
 # Data preprocessing and loading
 transform = transforms.Compose([
